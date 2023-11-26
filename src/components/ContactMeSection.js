@@ -76,8 +76,7 @@ const LandingSection = () => {
                                 <Input
                                     id="firstName"
                                     name="firstName"
-                                    onChange={formik.handleChange}
-                                    value={formik.values.firstName}
+                                    {...formik.getFieldProps("firstName")}
                                 />
                                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
                             </FormControl>
